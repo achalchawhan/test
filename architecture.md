@@ -11,14 +11,6 @@
 
 This document explains the system architecture for deploying the Node.js application on AWS using **Docker Swarm**.
 
----
-
-## High-Level Design
-
-![Architecture Diagram](architecture-diagram.png)
-
----
-
 ## Components
 
 1. **AWS VPC**
@@ -77,5 +69,6 @@ This document explains the system architecture for deploying the Node.js applica
 * Nginx configuration allows horizontal scaling of backend services.
 * Using Docker containers ensures portability, version control, and easier CI/CD integration.
 * The modular design ensures that services (proxy, backend, manager) can be updated independently.
+
 
 
